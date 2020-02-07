@@ -1,0 +1,98 @@
+
+
+/* the footer that stores all useful contact information on it*/
+
+.site-footer{
+    background-color: #fffd8c;
+    margin-top:250px;
+    padding:15px;
+
+}
+
+.backgroundpicture{
+    margin-left: 500px;
+}
+.icons{
+    float: right;
+}
+
+/* the body stores all the important information about the site and
+controls the background picture*/
+
+body{
+font-family: 'Montserrat', sans-serif;
+background-image:url("images/bg-image/scooter.svg");
+background-position: center;
+background-repeat: no-repeat;
+background-size: 45%;
+}
+
+textarea{
+border-radius: 25px;
+border: none;
+  }
+
+  /* for the contact information at the right of the website*/
+input[type="text"]{
+    padding:6px;
+   height:1rem;
+      border: 0.5px solid black;
+   margin:5px;
+  box-sizing:border-box;
+   height:25px;
+   border-radius: 20px;
+   background-color: lightgray;
+   font-family: 'Montserrat', sans-serif;
+   width: 300px;
+  }
+
+  /* in this part I used box shadow to add a border around the application segment and it
+  added depth to the page*/
+
+  .contactform{
+      background-color: white;
+      box-shadow: 2px 2px 2px 2px  black;
+      border-radius: 15px;
+  }
+
+  .boss{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  button{
+      background-color: #ff8480;
+      font-family: 'Montserrat', sans-serif;
+      border-radius: 20px;
+      padding:10px;
+      width:150px;
+      border: none;
+      color:white;
+      font-weight: bold;
+  }
+
+  /*this is what I used to space the left side of the page from the application
+  to right using flexbox*/
+
+.left{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+
+}
+
+h1{
+    font-size: 2.5rem;
+font-weight: bold;
+}
+
+.submit{
+padding:20px;
+}
+/*this is for spacing out part of the sentance at the bottom of the contact segment into different colours*/
+
+.status{
+    color: pink;
+    font-family: 'Montserrat', sans-serif;
+}

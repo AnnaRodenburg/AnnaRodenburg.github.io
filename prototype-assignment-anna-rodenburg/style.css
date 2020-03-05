@@ -631,6 +631,19 @@ margin-right:50px;
         margin-right: unset;
     }
 
+    .graduationpicture, .graduation{
+        margin-left: unset;
+    }
+    .discover{
+        margin-right: unset;
+    }
+    .entertainmentinfo{
+        margin-left: unset;
+    }
+    .entertainmentimage, .entinfo{
+        margin-left: unset;
+        width: 100%;
+    }
     /*the navigation text is alligned to the center*/
     nav{
         text-align: center;

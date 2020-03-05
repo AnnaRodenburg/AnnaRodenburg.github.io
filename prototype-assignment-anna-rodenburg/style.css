@@ -601,6 +601,9 @@ margin-right:50px;
         width:100%;
     }
 
+    h1{
+        font-size: 45px;
+    }
     /*the following elements are used with margin right and left with unset because it removes the 
     margin pushing the elements
     */

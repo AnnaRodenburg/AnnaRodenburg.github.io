@@ -1,0 +1,721 @@
+
+/*Josh Trozzo credit helping with understanding flexbox and other minor sections of code. March 5th 2020.*/
+
+
+/*this sets the bodies which is all of the page, the font family and the margin */
+body{
+     font-family: 'Raleway', sans-serif;
+     margin: 0;
+}
+
+/*this sets all the h1 tags to different font sizes, weights and a font family*/
+
+h1{
+    font-size: 65px;
+    font-weight:700;
+    font-family: 'Raleway', sans-serif;
+}
+
+/*this sets the nav unordered lists and removes styles from the links*/
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* navigation unordered and list and setting the space for each link*/
+nav ul li {
+    min-width: 120px;
+}
+
+/*This sets the color for the navigation to black, sets how big the padding is for each block and what
+colour the different names for the pages*/
+nav a,
+nav a:link,
+nav a:visited{
+    text-decoration: white;
+    background-color: #3c3b3a;
+    padding: 10px 20px;
+    text-align: center;
+    color:white;
+}
+/*This affects the colour when the cursor is overtop of the different pages*/
+nav a:hover,
+nav a:focus,
+nav a.active {
+    background-color:#3c3b3a;
+    text-align: center;
+    color:white;
+}
+
+/*The different lists are displayed inline*/
+li{
+    display: inline;
+}
+/*Putting margin for all of the different links in the navigation*/
+.navigationlinks{
+    margin-top: 50px;
+    margin-right:70px;
+}
+
+/*this is setting the main text to the black colour*/
+.maincontent{
+    width: 100%;
+    background-color: #3c3b3a;
+}
+
+/*This is setting the footer to display as blocks, how big the blocks turn out to be,
+what colour the text is with it being centered and all the same size*/
+footer{
+    display: block;
+    padding:2rem;
+    background-color: #3c3b3a;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/*this is setting the logo at the top of the page a certain size and colour*/
+
+.arc{
+    padding:1rem;
+    color:white;
+}
+
+/*this is setting the width of the logo to 100%*/
+.logopic{
+    width: 100%;
+}
+
+/*this is setting the colour of all of the h4 text which is on all 3 pages to green, all the 
+sizes of the fonts to 32px and the font weights which bolds all of them, and finally all of the
+h4s are set to italics.*/
+h4{
+    color: #26a682;
+    font-size:32px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/*this sets the h3s in the page to 40px and all of them to bold.*/
+h3{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/*this sets the sizes of the h2 to 24 pixels and is bolded as well.*/
+h2{
+    font-size:24px;
+    font-weight:400;
+}
+
+/*the flexbox tag is used to space things out properly on the page and how it causes certain tags
+to wrap around each other when the elements are used.*/
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+/*the flexbox text holds the text for the construction segmet of the page and is set
+with a max width of 46% and is moved to the left for good spacing throughout the page*/
+.flexboxtext{
+    max-width: 46%;
+    margin-left:20px;
+}
+
+/*this image is located beside the construction information and is set at a max width
+of 46% which means it cannot exceed this width*/
+
+.constructionimage{
+    max-width: 46%;
+}
+
+/*this is the class of the construction image and is set to a max width of 100%*/
+.construct{
+max-width: 100%;
+}
+
+/*this image is located on the about page and the object fit tag is used to condense the image
+into a smaller version that fits the page better and is set at a height of 230px*/
+.aboutimage{
+    object-fit:cover;
+    width:100%;
+    height:230px;
+}
+/*this is located on the about page and is a big segment of the about page it controls
+the spacing throughout that segment and moves the text throughout credit for transform
+translate https://www.w3schools.com/howto/howto_css_image_text.asp*/
+.about{
+    position: absolute;
+    top:30%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+/*the colour of the text for the about section and the position relative is for the image to be similar
+to its normal position and is pushing the margin to the bottom by 50px */
+.aboutsection{
+    position: relative;
+    color:white;
+    margin-bottom: 50px;
+}
+
+/*this sets all the spacing for the who what where different margins and widths*/
+.questions{
+    margin-top:50px;
+    margin-bottom:50px;
+}
+/*the who for the question in the about page is next to the what and where and is seperated by
+width and margin*/
+.who{
+    max-width: 30%;
+    margin-left:20px;
+}
+/*the question what on the about page that is set at a mad width of 30 percent*/
+.what{
+    max-width: 30%
+}
+
+/*the where in the about page is in the about page and is set with a max width and is 
+seperated from the edge of the page with margin right it pushes the text left*/
+.where{
+    max-width: 30%;
+    margin-right:20px;
+}
+
+/*this sets all of the text for icons green*/
+.greenfont{
+    color:#26a282;
+}
+
+
+/*this is all the different photos in the about page and is set with all the same width and
+object fit because it forces the images to all have the same height with 300px*/
+.bar, .bowling, .fitness, .climbing{
+    width: 95%;
+    object-fit:cover;
+    height:300px;
+    }
+
+/*these are the image classes for the about page and they have margin bottom to push the images up
+and all have a max width of 50 percent */
+.barimage, .bowlingimage, .fitnessimage, .climbingimage{
+max-width: 50%;
+margin-bottom: 60px;
+}
+
+/*all the information beside the images and they are all spaces out evenly with a max width of
+46 percent */
+.barinfo, .bowlinginfo, .fitnessinfo, .climbinginfo{
+max-width: 46%;
+}
+
+
+/*the following tags all have the same margin and they are all pushed to the right and left by 20 pixels
+in order to push them out from the edge of the page*/
+.climbing{
+    margin-right:20px;
+}
+
+.fitness{
+    margin-left:20px;
+}
+
+.climbinginfo{
+    margin-left:30px;
+}
+
+.fitnessinfo{
+    margin-right:30px;
+
+}
+
+.bowlinginfo{
+    margin-left:20px;
+}
+
+.barinfo{
+    margin-right:20px;
+
+}
+.barimage{
+    margin-left:20px;
+}
+
+/*this is to set the different headers with this class to italics */
+.competitive{
+    font-style: italic;
+}
+
+/*this sets these tags with pushing them up from the top and the bottom with margin*/
+.paratext, .lanes, .competitive{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
+/* this is to align the text in the about page at the bottom  to the middle of it */
+.thankyou{
+    text-align: center;
+}
+
+/*these are for all of the logos at the bottom of the about page and spaces them out correctly
+with margin*/
+.sa, .ac, .pcl, .cibc{
+    margin-left: 30px;
+    margin-right: 30px;
+    display: inline-block;
+    margin-bottom:30px;
+} 
+
+/*this is the text for the top of the newsletter and is black text and pushed up with margin
+bottom*/
+.date{
+    display: block;
+    padding:0.7rem;
+    background-color: #3c3b3a;
+    color:white;
+    margin-bottom: 50px;
+}
+
+/*this is for all the text in the contact form and is set with padding, height , colours, etc
+to stylize it well*/
+input[type="text"]{
+    padding:20px;
+   height:1rem;
+   margin:2px;
+  box-sizing:border-box;
+   height:25px;
+   border-radius: 20px;
+   background-color: white;
+   font-family: 'Raleway', sans-serif;
+   width: 90%;
+   border:none;
+   margin-left:10px;
+  }
+  input[type="message"]{
+    padding:40px;
+   height:1rem;
+   margin:2px;
+  box-sizing:border-box;
+   height:25px;
+   border-radius: 20px;
+   background-color: white;
+   font-family: 'Raleway', sans-serif;
+   width: 90%;
+   border:none;
+   margin-left:10px;
+  }
+.contactform{
+    background-color: #26a282;
+    width:35%;
+    border-radius: 20px;
+    padding-bottom:30px;
+    height:600px;
+    margin-top:50px;
+    margin-right:50px;
+}
+
+/*this is the button for the end of the contact form and is levelled with padding and 
+pushed with margin of all directions*/
+.contactbutton{
+    border-radius: 20px;
+    background-color: #3c3b3a;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    padding:7px 30px 7px 30px;
+    font-size: 1rem;
+    margin-top:10px;
+    margin-left:10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/*this next elements are used to stylize the contact form and how the contact form is spaced out
+evenly throughout.*/
+.contactus{
+    color:white;
+    padding-top:25px;
+    margin-bottom: 15px;
+    margin-left:10px;
+}
+
+.contacttext{
+    color:white;
+    margin:6px;
+    margin-left:15px;
+}
+
+.messagetext{
+    padding:20px;
+}
+
+.contactpage {
+    width: 50%;
+    margin-left:50px;
+    margin-bottom: 80px;
+}
+
+/*the width of the google map on the contact page to fit correctly when using flexbox*/
+.locationmap{
+    width:45%;
+}
+
+.infocontact{
+    width: 50%;
+    margin-left:50px;
+}
+
+.contactimage{
+    width:70%;
+}
+/*the next elements are used in the entertainment segment of the website and spaced out evenly from the edge of the page using margin left
+and right*/
+.entertainmentinfo{
+    width:40%;
+    margin-left: 30px;
+}
+.entertainmentimage{
+    width:50%;
+    margin-top:15px;
+}
+.entinfo{
+    width:95%;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 50px;
+}
+
+/*the center alignment of the icon on the home page to cause it to move to the middle of the page*/
+.scrolldown{
+    text-align: center;
+}
+/*this is the animation to the arrow on the front page and makes the arrow grow in size and changes colour to red and is 4 seconds in duration*/
+.fa-arrow-circle-down{
+    color: #26a282; 
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    font-size:50px;
+}
+@keyframes arrow{
+    0% { 
+        transform: scale(1, 1);
+color:red;
+    } 100% {
+        transform: scale(0.5,0.5);
+    }
+
+
+}
+
+/*this controls the section about dijanelle simon on the homepage and how
+all the elements on this segment are spaced out and coloured also border radius
+is used to make her image circled for her profile.*/
+.dijanellesimon{
+    padding: 20px;
+    background-color: #3c3b3a;
+    color:white;
+    font-size: 1rem;
+}
+.simoncircle{
+    border-radius: 80px;
+}
+.dijanellename{
+    font-size: 20px;
+}
+
+.simonpresident{
+    font-size: 20px;
+    width:40%
+}
+
+.simonparagraph{
+    font-size:22px;
+    width:100%;
+}
+
+/*this is the button and has margins to move it in place and padding to set
+on each side of the button to level it out*/
+
+.getstarted{
+    border-radius: 20px;
+    background-color: #26a682;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    padding:7px 30px 7px 30px;
+    font-size: 1rem;
+    margin-top:10px;
+    margin-left:10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.discover{
+    width:40%;
+    margin-right: 50px;
+
+}
+/*this is the segment on the homepage that controls the picture of students graduating
+and object fit is used to condense the picture into a fixed height of 200px*/
+.graduation{
+    width:100%;
+    margin-left: 30px;
+    margin-bottom:30px;
+    object-fit: cover;
+    height: 200px;
+    margin-top: 50px;
+}
+.graduationpicture{
+    width: 50%;
+}
+
+/*this is the other animation on my page and causes the button to change size and colour to red and
+causes it to move side to side.*/
+
+.learnmore{
+    border-radius: 20px;
+    background-color: #26a682;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    padding:7px 30px 7px 30px;
+    font-size: 1rem;
+    margin-top:10px;
+    margin-left:55%;
+    margin-bottom:30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    animation-name: button;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+@keyframes button{
+    0% { 
+        transform: translate(-100px, 0);
+    background-color: red;
+    } 
+    100% {
+        transform: translate(100, 0);
+    }
+}
+
+/*these next features are used for the news letter and control things like the width of the
+button, how its spaced out on the page with margin and bolded with font weight*/
+.newsletterbutton{
+    width: 30%;
+}
+
+.newsbutton{
+    border-radius: 20px;
+    background-color: #26a682;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    padding:7px 30px 7px 30px;
+    font-size: 1rem;
+    margin-top:20px;
+    margin-bottom:30px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.newsletterinfo{
+    width:50%;
+    margin-left:200px;
+}
+
+/*the information at the top of the homepage that is controlled with flexbox
+,width and margin that pushes out from the left*/
+.arcinfo{
+    width: 40%;
+    margin-left: 40px;
+}
+
+/*controls the icons on the homepage and makes them all centered on the page*/
+.bowlingicon, .indoorcourticon, .fitnessicon, .rockclimbingicon{
+    text-align: center;
+    }
+
+/*the discover segment is used with flexbox with the picture on the front page and
+is spaced out with width and margin.*/
+.discoverpicture{
+    
+    width: 40%;
+    margin-right: 40px;
+}
+.discoverpic{
+    width: 100%;
+    object-fit: cover;
+    margin-top:50px;
+}
+/*used to control the font of a specific line of text in the homepage*/
+.algonquin{
+    color:#26a282;
+    font-size: 40px;
+}
+/*the segment that dijanelle simon is featured and spaces out evenly with all
+the widths being the same*/
+.simonimage{
+    width: 20%;
+}
+.simontitle{
+    width: 10%;
+}
+.simonpara{
+    width: 40%;
+}
+
+.newsletter{
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+}
+
+@media screen and (max-width:685px){
+
+    /*the contact page after 685 px sets the width to the full fit of the screen and
+    pushes the margin right to space it out*/
+    .contactpage{
+        width: 100%;
+margin-right:50px;
+    }
+    .locationmap{
+        width:100%;
+        margin-left:10px;
+    }
+    .infocontact{
+        width: 100%;
+    }
+    .contactform{
+        width:100%;
+        margin-left:50px;
+    }
+    iframe{
+        width:100%;
+    }
+
+    /*the following elements are used with margin right and left with unset because it removes the 
+    margin pushing the elements
+    */
+    .climbing{
+        margin-right:unset;
+    }
+    
+    .fitness{
+        margin-left:unset;
+    }
+    
+    .climbinginfo{
+        margin-left:unset;
+    }
+    .fitnessinfo{
+        margin-right:unset;
+    }
+    .bowling{
+        margin-right: unset;
+    }
+    .bowlinginfo{
+        margin-left: unset;
+    }
+    .barimage{
+        margin-left: unset;
+    }
+    .barinfo{
+        margin-right: unset;
+    }
+
+    /*the navigation text is alligned to the center*/
+    nav{
+        text-align: center;
+    }
+    .navigationlinks{
+        width: 100%;
+        margin-top: unset;
+    }
+    .navigationbar{
+        width: 100%;
+    }
+    li a{
+        display: block;
+    }
+    .arc{
+        width: 100%;
+    }
+    .arcinfo{
+        width:100%;
+    }
+    .discoverpicture{
+        width:100%;
+    }
+    .graduationpicture{
+        width:100%;
+    }
+    .discover{
+        width:100%;
+    }
+    .entertainmentinfo{
+    width:100%;
+    }
+    .entertainmentimage{
+        width:100%;
+    }
+
+}
+/*when the screen surpasses 520 pixels all of these elements change*/
+@media screen and (max-width:520px){
+
+    /*all of these elements are turned to a max width of 100% width to fit the mobile view*/
+    .flexboxtext{
+        max-width: 100%;
+    }
+    
+    .constructionimage{
+        max-width: 100%;
+        margin-bottom:100px;
+    }
+
+.who{
+    max-width: 100%;
+}
+
+.what{
+    max-width: 100%
+}
+
+.where{
+    max-width: 100%;
+}
+/*this pushes the icons at the bottom of the about page so they all fit in a horizontal line*/ 
+.sa, .ac, .pcl, .cibc{
+    margin-left: 30px;
+    margin-right: 30px;
+    display:block;
+}
+
+/*sets all of the icons to a width of 50%*/
+.students{
+width:50%;
+
+}
+.contactpage{
+    width: 100%;
+}
+
+}
+
+/*when the screen passes 300pixels all fo the images in about turns to a max width of 100%*/
+@media screen and (max-width:300px){
+
+.barimage, .bowlingimage, .fitnessimage, .climbingimage{
+  max-width: 100%
+
+  
+        } 
+    }

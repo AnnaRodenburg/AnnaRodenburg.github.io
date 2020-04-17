@@ -1,0 +1,142 @@
+
+
+
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin:0;
+}
+
+
+
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    min-width: 120px;
+    display:inline;
+}
+nav a,
+nav a:link,
+nav a:visited{
+    text-decoration: black;
+    background-color: #F9FF9F;
+    padding: 10px 20px;
+    text-align:center;
+}
+
+.site-header{
+    background-color: #F9FF9F;
+
+}
+
+.nav{
+    text-align: center;
+    margin-top: -20px;
+}
+
+
+footer{
+    padding: 1rem;
+    margin-top:5rem;
+    background-color: #F9FF9F;
+}
+
+
+
+.maincamera{
+    margin-top: 2rem;
+    margin-left:30rem;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.titlepage{
+    text-align: center;
+    background-color: #F9FF9F;
+    padding: 1rem;
+    margin-bottom: -40px;
+    margin-top:-10px;
+    padding-bottom: 60px;
+}
+
+
+.contactheaders{
+    margin-top: 10rem;
+}
+
+.maincontent{
+    text-align: center;
+}
+
+.mainheader, .mainpara {
+    text-align: center;
+}
+
+
+
+.flexbox{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+
+.portfolio1{
+    margin-left:20rem;
+}
+
+.program{
+    margin-bottom:20%
+}
+
+.photo{
+   float: right;
+}
+
+
+.flex{
+display: flex;
+flex-wrap:wrap;
+justify-content: space-between;
+}
+
+.contactpara{
+    width:45%;
+}
+
+.footericons{
+    text-align:right;
+}
+.button{
+    border-radius: 20px;
+    background-color: #3c3b3a;
+    color:white;
+    font-family: 'Raleway', sans-serif;
+    border:none;
+    padding:7px 30px 7px 30px;
+    font-size: 1rem;
+    margin-top:10px;
+    margin-left:10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.coder{
+    padding:50px;
+}
+
+.code, .video, .photos{
+    text-align: center;
+}
+
+.mylogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10px;
+}

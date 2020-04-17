@@ -14,3 +14,8 @@ https://unsplash.com/photos/o7HO5uGh2HQ
 https://www.pexels.com/photo/action-background-broadcast-broadcasting-865787/
 https://www.pickpik.com/closeup-code-screen-web-design-technology-internet-81670
 https://www.123rf.com/photo_54972004_tv-camera-at-the-press-conference.html
+
+icons:
+https://worldvectorlogo.com/de/logo/facebook-icon-1
+https://www.flaticon.com/free-icon/instagram_121520
+https://www.freepik.com/free-icon/twitter-logo-black-background_781311.htm#page=1&query=twitter&position=4
